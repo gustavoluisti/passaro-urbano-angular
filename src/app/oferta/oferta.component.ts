@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
 import { OfertasService } from '../ofertas.service'
-
 import { Oferta } from '../shared/oferta.model'
+
+
 
 @Component({
   selector: 'app-oferta',
@@ -11,6 +12,7 @@ import { Oferta } from '../shared/oferta.model'
   providers:[ OfertasService ]
 })
 export class OfertaComponent implements OnInit {
+
 
   public oferta: Oferta
 
@@ -23,9 +25,7 @@ export class OfertaComponent implements OnInit {
         console.log(this.oferta)
       })
 
-   //this.route.params.subscribe((parametro : any ) => {
-    // console.log(parametro.id)
-   //})
-  }
+    }
+
 
 }
